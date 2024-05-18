@@ -1,0 +1,10 @@
+.navbar .buttons {
+    background: #1a1a1a;
+    border: 1px solid #ffffff1a;
+    padding: 6px;
+    border-radius: 32px;
+}
+
+.navbar .buttons .nav-link {
+    padding: 8px 16px;
+}
