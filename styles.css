@@ -90,7 +90,7 @@ a.wait-btn i {
 
 .glowing-hr {
     border: 0;
-    height: 2px;
+    height: 1px;
     width: 80%;
     margin: 0;
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0.2) 80%);
