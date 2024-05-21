@@ -11,37 +11,50 @@
     color: #ffffff;
 }
 
-.main .design .content p {
-    width: 85%;
-    color: #ffffff80;
-    font-size: 1.3rem;
-}
-
-.main .design iframe {
-    height: 600px;
-}
-
-.main .design .content p span {
+.main .design .content .card {
+    background: linear-gradient(180deg, #ffffff0f 0%, #ffffff00 100%);
+    border: 1px solid #ffffff1a;
     color: #ffffff;
-    font-weight: 600;
 }
+
+.main .design .content .card .icon {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 26px;
+}
+
+.main .design .content .card .icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 12px;
+    padding: 2px;
+    background: linear-gradient(90deg, #ff0055, #f94cff);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
 
 @media (max-width: 767px) {
-    .main .design {
+    .main .design .heading {
         text-align: center;
-    }
-
-    .main .design .content p {
-        width: 100%;
-        font-size: 1rem;
     }
 
     .main .design h1 {
         font-size: 2.3rem;
-    }
-
-    .main .design iframe {
-        height: 300px;
     }
 }
 
@@ -364,7 +377,7 @@
 }
 
 .slider .card .bottom p {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .slider .badge {
@@ -373,8 +386,8 @@
 }
 
 .slider .card img {
-    height: 130px;
-    width: 130px;
+    height: 60px;
+    width: 60px;
     margin-right: 18px;
     border-radius: 50%;
 }
