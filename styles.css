@@ -14,7 +14,6 @@ a.wait-btn {
     display: inline-block;
     position: relative;
     padding: 8px 16px;
-
     border-radius: 21px;
     overflow: hidden;
     transition: color 0.4s ease-in-out;

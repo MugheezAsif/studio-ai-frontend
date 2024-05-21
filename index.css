@@ -310,6 +310,46 @@
     }
 }
 
+.contact .top h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.contact .top h1 span {
+    background: linear-gradient(90deg, #ff0055, #f94cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact .top p {
+    color: #ffffff80;
+    font-size: 1.5rem;
+    width: 70%;
+    margin: auto;
+}
+
+.contact .bottom button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 32px;
+}
+
+@media (max-width: 767px) {
+    .contact .top h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact .top p {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .contact .bottom button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
 .slider .card {
     background: linear-gradient(180deg, #ffffff0f 0%, #ffffff00 100%);
     border: 1px solid #ffffff1a;
@@ -325,6 +365,18 @@
 
 .slider .card .bottom p {
     font-size: 1.5rem;
+}
+
+.slider .badge {
+    background-color: #140e23;
+    color: #6c49e4;
+}
+
+.slider .card img {
+    height: 130px;
+    width: 130px;
+    margin-right: 18px;
+    border-radius: 50%;
 }
 
 .slider .top h4 {
@@ -467,6 +519,13 @@
     .early .bottom p {
         font-size: 12px;
     }
+
+    .slider .card img {
+        height: 100px;
+        width: 100px;
+        margin-right: 12px;
+        border-radius: 50%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -495,4 +554,136 @@
     border-top: 1px solid #ffffff1a;
     border-bottom: 1px solid #ffffff1a;
     color: #ffffff80;
+}
+
+.faq .top h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.faq .top p {
+    font-size: 1.5rem;
+    color: #ffffff80;
+}
+
+.faq .bottom button {
+    background-color: transparent !important;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.faq .bottom .accordion-body {
+    color: #ffffffc8;
+}
+
+.faq .bottom .last {
+    border-bottom: 1px solid #fff;
+}
+
+.faq .bottom .first {
+    border-top: 1px solid #fff;
+}
+
+.pricing .top h1 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #ff0055, #f94cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pricing .top p {
+    color: #ffffff80;
+    font-size: 1.5rem;
+}
+
+.pricing .bottom .button-group button {
+    margin: 0;
+    border-radius: none !important;
+    background-color: transparent;
+    border: 1px solid #ffffff1a;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 32px;
+}
+
+.pricing .bottom .button-group button:hover {
+    background-color: #ffffff1a;
+}
+
+.pricing .bottom .button-group button.active {
+    background-color: #ffffff1a;
+}
+
+.pricing .bottom .card {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #ffffff1a;
+    padding: 2rem;
+}
+
+.pricing .bottom .card.grad h4 {
+    background: linear-gradient(90deg, #ff0055, #f94cff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pricing .bottom .card.grad {
+    position: relative;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.pricing .bottom .card.grad::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 32px;
+    padding: 1px;
+    background: linear-gradient(90deg, #ff0055, #f94cff);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.pricing .bottom .card .price p {
+    font-size: 2.5rem;
+}
+
+.pricing .bottom .card .price p span {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+    .pricing .top h1 {
+        font-size: 2.5rem;
+    }
+
+    .pricing .top p {
+        font-size: 1rem;
+    }
+
+    .pricing .bottom .button-group button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .pricing .bottom .card .price p {
+        font-size: 2rem;
+    }
+
+    .pricing .bottom .card .price p span {
+        font-size: 1rem;
+    }
 }
