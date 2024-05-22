@@ -33,7 +33,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg px-3 bg-black fixed-top">
+    <nav class="navbar navbar-expand-xl px-3 bg-black fixed-top">
         <div class="container-fluid p-3">
             <a class="navbar-brand text-white ms-0 ms-md-2" href="#"><img src="images/main-logo.png"
                     class="img img-fluid" alt="main-logo"></a>
@@ -45,13 +45,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                     <li class="nav-item me-2">
-                        <a class="nav-link text-white me-2" href="#">Home</a>
+                        <a class="nav-link text-white me-2" href="#home">Home</a>
                     </li>
                     <li class="nav-item me-2">
-                        <a class="nav-link text-white me-2" href="#">Benefits</a>
+                        <a class="nav-link text-white me-2" href="#benefits">Benefits</a>
                     </li>
                     <li class="nav-item me-2">
-                        <a class="nav-link text-white me-2" href="#">Features</a>
+                        <a class="nav-link text-white me-2" href="#features">Features</a>
                     </li>
                     <li class="nav-item me-2">
                         <a class="nav-link text-white me-2" href="#testimonials">Testimonials</a>
@@ -85,7 +85,7 @@
 
     <div class="pt-5">
         <div class="container mt-5 pt-5">
-            <div class="main">
+            <div id="home" class="main">
                 <div class="header">
                     <div class="anc-bar w-100 mb-2 bg-secondary p-2 px-3 rounded">
                         <p class="m-0 text-center">This is a testing announcement bar</p>
@@ -113,7 +113,8 @@
                     </div>
                 </div>
 
-                <div class="design">
+                <!-- features -->
+                <div id="features" class="design">
                     <div class="heading my-5">
                         <h1 class="top">Web Design.</h1>
                         <h1 class="bottom">Redesigned.</h1>
@@ -279,7 +280,7 @@
                 </div>
 
                 <!-- stars -->
-                <div class="stars mt-5 pt-3">
+                <div id="benefits" class="stars mt-5 pt-3">
                     <div class="content my-5">
                         <div class="row d-flex justify-content-between">
                             <div class="col-lg-6 my-5">
@@ -406,7 +407,7 @@
                     <div class="bottom">
                         <div class="my-5">
                             <div class="row">
-                                <div class="col-md-4 p-2 col-lg-4">
+                                <div class="col-md-6 p-2 col-lg-4">
                                     <div class="">
                                         <div class="card glow-border p-4 mx-3">
                                             <div class="bottom">
@@ -425,7 +426,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 p-2 col-lg-4">
+                                <div class="col-md-6 p-2 col-lg-4">
                                     <div class="">
                                         <div class="card glow-border p-4 mx-3">
                                             <div class="bottom">
@@ -444,7 +445,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 p-2 col-lg-4">
+                                <div class="col-md-6 p-2 col-lg-4">
                                     <div class="">
                                         <div class="card glow-border p-4 mx-3">
                                             <div class="bottom">
@@ -463,7 +464,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 p-2 col-lg-4">
+                                <div class="col-md-6 p-2 col-lg-4">
                                     <div class="">
                                         <div class="card glow-border p-4 mx-3">
                                             <div class="bottom">
@@ -482,7 +483,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 p-2 col-lg-4">
+                                <div class="col-md-6 p-2 col-lg-4">
                                     <div class="">
                                         <div class="card glow-border p-4 mx-3">
                                             <div class="bottom">
@@ -501,7 +502,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 p-2 col-lg-4">
+                                <div class="col-md-6 p-2 col-lg-4">
                                     <div class="">
                                         <div class="card glow-border p-4 mx-3">
                                             <div class="bottom">
@@ -867,14 +868,27 @@
                     </div>
                 </div>
 
+                <!-- divide -->
+                <div class="py-5">
+                    <div class="glowing-hr-cont my-5">
+                        <hr class="glowing-hr">
+                    </div>
+                </div>
+
                 <div class="footer py-5">
-                    <div class="content py-4 d-flex align-items-center justify-content-between">
+                    <div class="top py-5 text-center">
+                        <img src="images/main-logo.png" class="img img-fluid" alt="main-logo">
+                        <br>
+                        <a href="#home" class="me-3">About</a>
+                        <a href="#home" class="me-3">Privacy Policy</a>
+                        <a href="#home">Terms of Service</a>
+                    </div>
+                    <div class="content py-4 d-block d-md-flex align-items-center justify-content-between">
                         <div class="left d-flex align-items-center">
-                            <i class="fa-brands me-2 fa-twitter"></i>
-                            <p class="m-0">@Mugheez</p>
+                            <p class="m-0">@Askalto</p>
                         </div>
                         <div class="right">
-                            <p class="m-0">©2023 Mugheez Inc. All Rights Reserved.</p>
+                            <p class="m-0">©2024 Askalto. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
@@ -882,36 +896,19 @@
         </div>
     </div>
 
-
+    <button class="top-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>   
 </body>
 
 <script>
     $(function () {
-        centerMode: true,
-            autoplay: true,
-                autoplaySpeed: 1500,
-                    centerPadding: '60px',
-                        slidesToShow: 2,
-                            responsive: [
-                                {
-                                    breakpoint: 1024,
-                                    settings: {
-                                        arrows: false,
-                                        centerMode: true,
-                                        centerPadding: '40px',
-                                        slidesToShow: 1
-                                    }
-                                },
-                                {
-                                    breakpoint: 768,
-                                    settings: {
-                                        arrows: false,
-                                        centerMode: true,
-                                        centerPadding: '40px',
-                                        slidesToShow: 1
-                                    }
-                                }
-                            ]
+        
+
+    $('.top-btn').on('click', function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
     });
 
     $('.year-btn').on('click', function () {

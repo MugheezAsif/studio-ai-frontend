@@ -134,6 +134,23 @@ a.wait-btn i {
     padding-top: 36px;
 }
 
+.top-btn {
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    bottom: 0;
+    margin: 28px;
+    background: #ffffff;
+    border-radius: 50%;
+    border: none;
+    color: #000000;
+}
+
+.top-btn i {
+    margin: 0;
+    transform: rotate(0deg);
+}
+
 @media (max-width: 767px) {
     .hr-side {
         width: 80%;
