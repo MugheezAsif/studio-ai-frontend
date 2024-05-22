@@ -392,6 +392,11 @@
     border-radius: 50%;
 }
 
+.slider .top h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
 .slider .top h4 {
     color: #ffffff80;
     font-weight: 300;
@@ -538,6 +543,11 @@
         width: 100px;
         margin-right: 12px;
         border-radius: 50%;
+    }
+
+    .slider .top h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
     }
 }
 

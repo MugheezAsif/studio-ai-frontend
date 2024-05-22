@@ -2,6 +2,10 @@
     position: relative;
 }
 
+.header .anc-bar {
+    background: linear-gradient(90deg, #ff0055, #f94cff);
+}
+
 .header .header-img {
     position: relative;
 }
