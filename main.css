@@ -580,7 +580,7 @@
 
 .footer .top a {
     text-decoration: none;
-    color: #f94cff;
+    color: #fff;
     font-weight: 600;
 }
 
@@ -599,25 +599,18 @@
 }
 
 .faq .bottom button {
-    background-color: transparent !important;
+    background-color: #ffffff1a;
     margin-top: 16px;
     margin-bottom: 16px;
     color: #ffffff;
     font-weight: 600;
-    border: none;
     font-size: 1.2rem;
+    border: 1px solid #ffffff1a !important;
+    border-radius: 8px !important;
 }
 
 .faq .bottom .accordion-body {
     color: #ffffffc8;
-}
-
-.faq .bottom .last {
-    border-bottom: 1px solid #fff;
-}
-
-.faq .bottom .first {
-    border-top: 1px solid #fff;
 }
 
 .pricing .top h1 {

@@ -1,3 +1,13 @@
+.anc-bar {
+    background: linear-gradient(90deg, #ff0055, #f94cff);
+    position: fixed;
+    z-index: 6;
+}
+
+.navbar {
+    margin-top: 38px;
+}
+
 .navbar .buttons {
     background: #1a1a1a;
     border: 1px solid #ffffff1a;
