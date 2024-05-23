@@ -406,6 +406,7 @@
     color: #ffffff;
 }
 
+
 .early .glow-container {
     position: relative;
 }
@@ -549,6 +550,16 @@
         font-size: 2.5rem;
         font-weight: 600;
     }
+}
+
+
+.slider .mb p {
+    color: #ffffff80;
+}
+
+.slider .mb img {
+    height: 55px;
+    width: 55px;
 }
 
 @media (max-width: 768px) {
