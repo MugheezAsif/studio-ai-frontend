@@ -1,0 +1,151 @@
+button,
+a.gradient-btn,
+a.wait-btn {
+    display: inline-block;
+    position: relative;
+    padding: 8px 16px;
+    border-radius: 21px;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button i,
+a.gradient-btn i,
+a.wait-btn i {
+    margin-left: 6px;
+    transition: transform 0.15s ease-in-out;
+    transform: rotate(-45deg);
+}
+
+.gradient-btn {
+    background: #2c2c2c;
+    border: 1px solid #ffffff1a;
+    color: #ffffff80;
+}
+
+.gradient-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #ff0055, #f94cff);
+    transition: left 0.15s ease-in-out;
+    z-index: 0;
+}
+
+.gradient-btn:hover::before {
+    left: 0;
+}
+
+.gradient-btn:hover {
+    color: #ffffff;
+}
+
+.gradient-btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.wait-btn {
+    background: #ffffff;
+    color: #000000;
+    border: none;
+}
+
+.wait-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.gradient-btn i,
+.wait-btn i {
+    transition: transform 0.15s ease-in-out;
+}
+
+.gradient-btn:hover i,
+.wait-btn:hover i {
+    transform: rotate(0deg);
+}
+
+body {
+    background: #02051c;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-image: linear-gradient(#02051c, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, #02051c),
+        linear-gradient(227deg, #02051c, rgba(255, 0, 85, .15) 15%, #02051c 30%, rgba(249, 76, 255, .15) 45%, #02051c 60%, rgba(255, 0, 85, .15) 75%, #02051c 90%, rgba(249, 76, 255, .15));
+}
+
+
+.main .main-img {
+    max-width: 88px;
+}
+
+.header,
+.footer {
+    width: 100%;
+}
+
+.main a {
+    text-decoration: none;
+    color: #ff0055;
+}
+
+.main .header {
+    color: #fff;
+}
+
+.card {
+    background: transparent;
+    border: none;
+    max-width: 500px;
+}
+
+.card-body {
+    background: #02051c;
+    border: 1px solid #1a1d30;
+    border-radius: 32px;
+    color: #fff;
+}
+
+.card h1 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.card p {
+    color: #a2a4ae;
+    font-size: 1.2rem;
+}
+
+.card .form-control {
+    background: #1a1d30;
+    border: 1px solid #1a1d30;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 12px;
+    padding-left: 19px;
+    border-radius: 32px;
+}
+
+.card .form-control::placeholder {
+    color: #fff;
+}
+
+.center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
